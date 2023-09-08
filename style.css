@@ -40,12 +40,18 @@ body {
 .image img {
     width: 275px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .main h1 {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 15px 0;
+    cursor: pointer;
+}
+
+.main h1:hover {
+    color: var(--Cyan);
 }
 
 .main p {
@@ -59,6 +65,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
+    font-size: 15px;
 }
 
 .eth {
@@ -78,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .owner img {
@@ -93,4 +100,9 @@ body {
 
 b {
     color: white;
+}
+
+b:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
