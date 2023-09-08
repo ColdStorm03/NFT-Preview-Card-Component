@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 20%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%) ;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    font-family: 'Outfit', sans-serif;
+    padding: 20px 20px;
+}
+
+.card {
+    background-color: var(--Very-dark-blue-card-BG);
+    position: absolute;
+    max-width: 325px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 25px 25px;
+}
+
+.image img {
+    width: 275px;
+    border-radius: 10px;
+}
+
+.main h1 {
+    color: white;
+    font-size: 1.4rem;
+    padding: 15px 0;
+}
+
+.main p {
+    color: var(--Soft-blue);
+    line-height: 30px;
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.eth {
+    color: var(--Cyan);
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: var(--Soft-blue);
+    display: flex;
+    align-items: center;
+}
+
+.owner {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.owner img {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.owner p {
+    color: var(--Soft-blue);
+}
+
+b {
+    color: white;
+}
