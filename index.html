@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFT Preview Card Component</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>NFT Preview Card Component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="image">
-                <img src="img/image-equilibrium.jpg" alt="">
-            </div>
-            <div class="main">
-                <h1 class="title">Equilibrium #3429</h1>
-                <p class="description">Our Equilibrium collection promotes balance and calm.</p>
-            </div>
-            <div class="info">
-                <p class="eth">
-                    <img src="img/icon-ethereum.svg" alt="Ethereum Icon">&nbsp;
-                        0.041 ETH
-            
-                </p>
-                <p class="time">
-                    <img src="img/icon-clock.svg" alt="Clock Icon">&nbsp;
-                    3 days left
-                </p>
-            </div>
-            <hr>
-            <div class="owner">
-                <img src="img/image-avatar.png" alt="A picture of Jules Wyvern">
-                <p>Creation of <b>Jules Wyvern</b></p>
-            </div>
-        </div>
+  <div class="card">
+    <div>
+      <img class="cube" src="images/image-equilibrium.jpg" alt="">
+      <img src="images/icon-view.svg" alt="">
     </div>
+    <div>
+      <h2 class="title">Equilibrium #3429</h2>
+      <p class="description soft-blue">Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+      <div class="eth-time">
+        <p class="eth">
+          <img src="images/icon-ethereum.svg" alt="">&nbsp;
+          <span>0.041 ETH</span>
+        </p>
+        <p class="time soft-blue">
+          <img src="images/icon-clock.svg" alt="">&nbsp;
+          <span>3 days left</span>
+        </p>
+        </div>
+      <hr size="1" noshade="">
+      <div class="owner-about">
+        <img class="owner-pic" src="images/image-avatar.png" alt="">
+        <p class="soft-blue credit">Creation of <span class="name">Jules Wyvern</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ColdStorm03">Tasin Absar</a>.
+  </div>
 </body>
 </html>

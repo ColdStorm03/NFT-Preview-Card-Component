@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
-
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
     --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
-    --Very-dark-blue-card-BG: hsl(216, 50%, 20%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
-    --White: hsl(0, 0%, 100%) ;  
+    --White: hsl(0, 0%, 100%);
+
+    --fw-light: 300;
+    --fw-medium: 400;
+    --fw-med-bold: 600;
 }
 
 * {
@@ -17,92 +19,113 @@
 
 body {
     background-color: var(--Very-dark-blue-main-BG);
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.125rem;
-    font-family: 'Outfit', sans-serif;
-    padding: 20px 20px;
+    flex-direction: column;
+    margin: 0 25px;
 }
 
 .card {
+    max-width: 335px;
     background-color: var(--Very-dark-blue-card-BG);
-    position: absolute;
-    max-width: 325px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 16px;
-    overflow: hidden;
     padding: 25px 25px;
+    border-radius: 16px;
 }
 
-.image img {
-    width: 275px;
+.card > * {
+    font-size: 1rem;
+}
+
+.cube {
+    width: 100%;
     border-radius: 10px;
-    cursor: pointer;
+    overflow: hidden;
 }
 
-.main h1 {
-    color: white;
-    font-size: 1.5rem;
-    padding: 15px 0;
-    cursor: pointer;
+.title {
+    color: var(--White);
+    font-weight: var(--fw-med-bold);
+    margin: 15px 0;
+    font-size: 1.25rem;
 }
 
-.main h1:hover {
+.title:hover {
+    cursor: pointer;
     color: var(--Cyan);
 }
 
-.main p {
-    color: var(--Soft-blue);
-    line-height: 30px;
-    padding-bottom: 15px;
-    font-size: 17px;
+.description {
+    margin-bottom: 10px;
+    line-height: 150%;
 }
 
-.info {
+.soft-blue {
+    color: var(--Soft-blue);
+    font-weight: var(--fw-light);
+}
+
+.eth-time {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
-    font-size: 15px;
+    margin: 15px 0;
 }
 
 .eth {
     color: var(--Cyan);
+    font-weight: var(--fw-medium);
     display: flex;
     align-items: center;
 }
 
 .time {
-    color: var(--Soft-blue);
     display: flex;
     align-items: center;
 }
 
-.owner {
-    padding-top: 15px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
+hr {
+    color: var(--Very-dark-blue-line);
 }
 
-.owner img {
-    width: 35px;
+.owner-about {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.owner-pic {
+    width: 30px;
+    border: 2px solid var(--White);
     border-radius: 50%;
-    border: 1px solid white;
 }
 
-.owner p {
-    color: var(--Soft-blue);
+.credit {
+    align-items: center;
 }
 
-b {
-    color: white;
+.name {
+    color: var(--White);
 }
 
-b:hover {
-    color: var(--Cyan);
+.name:hover {
     cursor: pointer;
+    color: var(--Cyan);
+}
+
+
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Soft-blue);
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
