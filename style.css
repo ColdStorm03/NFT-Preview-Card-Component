@@ -29,7 +29,7 @@ body {
 }
 
 .card {
-    max-width: 335px;
+    min-width: 335px;
     background-color: var(--Very-dark-blue-card-BG);
     padding: 25px 25px;
     border-radius: 16px;
